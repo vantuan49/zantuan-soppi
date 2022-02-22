@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link thư viện reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- link thư viện font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.css">
+
+    <title>Sộp pi:))</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <div id="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item ">
+                            Vào cửa hàng trên ứng dụng Sộp Pi
+                            <div class="navbar__list-item--qr">
+                                <img src="assets/img/QR-img.png" alt="QR Code" class="item__qrcode">
+                                <a href="" class="app__link"><img src="assets/img/ggplay-img.png" alt="Google Play"
+                                        class="item__ggplay item-app"></a>
+                                <a href="" class="app__link"><img src="assets/img/appstore-img.png" alt="App Store"
+                                        class="item__appstore item-app"></a>
+
+                            </div>
+
+                        </li>
+                        <li class="navbar__list-item navbar__list-item--separate pdl-8px opacity1">Kết nối
+                            <a href="#" class="items__icon "><i class="fa-brands fa-facebook fb-icon"></i></a>
+                            <a href="#" class="items__icon "><i class="fa-brands fa-instagram ins-icon "></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__list-item--link">
+                                <i class="fa-solid fa-bell items__icon"></i>
+                                Thông báo</a>
+                            <!-- begin header notify -->
+                            <div class="header__notify">
+                                <h3 class="header__notify-header">Thông báo mới nhận</h3>
+
+                                <ul class="header-notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="notify-item__link">
+                                            <img class="notify-item__link--img" src="./assets/img/notify-img.jpg"
+                                                alt="">
+                                            <div class="notify-item__content">
+                                                <h3 class="notify-item__link--header">Mỹ phẩm SkinCare đang có chương
+                                                    trình giảm giá ngày 1/1</h3>
+                                                <span class="notify-item__link--description">Thương hiệu mỹ phẩm đến từ
+                                                    Sì kin ke, sáng mịn da tự tin ra đường bảo đảm trai bu như kiến hiện
+                                                    đang giảm giá 99% chỉ còn 1k</span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="notify-item__link">
+                                            <img class="notify-item__link--img" src="./assets/img/notify-img.jpg"
+                                                alt="">
+                                            <div class="notify-item__content">
+                                                <h3 class="notify-item__link--header">Shop SK-Shoes đang có chương
+                                                    trình giảm giá ngày 1/1</h3>
+                                                <span class="notify-item__link--description">Với nhiều sản phẩm đến từ
+                                                    các thương hiệu nổi tiếng trên thế giới: Nike, Adidas, Balenciaga
+                                                    hiện
+                                                    đang giảm giá 99% chỉ còn 1k</span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="notify-item__link">
+                                            <img class="notify-item__link--img" src="./assets/img/notify-img.jpg"
+                                                alt="">
+                                            <div class="notify-item__content">
+                                                <h3 class="notify-item__link--header">Shop áo SK-Shirt đang có chương
+                                                    trình giảm giá ngày 1/1</h3>
+                                                <span class="notify-item__link--description">Với nhiều sản phẩm đến từ
+                                                    các lô cồ bờ ren nổi tiếng cho mojii người tha hồ lựa chọn hiện
+                                                    đang giảm giá 99% chỉ còn 1k</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__notify-footer">
+                                    <a href="#">Xem tất cả</a>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__list-item--link">
+                                <i class="fa-solid fa-circle-question items__icon"></i>
+                                Trợ giúp</a>
+                        </li>
+                        <!-- Phần đă nhập đăng ký -->
+                        <!-- <li class="navbar__list-item navbar__list-item--bold ">Đăng ký</li>
+                        <li class="navbar__list-item navbar__list-item--bold ">Đăng nhập</li> -->
+                        <!-- end phần đăng nhập đăng ký -->
+
+                        <!-- phần user info -->
+                        <div class="navbar__list-item navbar__list-item--userInfo">
+                            <img src="./assets/img/user-img.png" alt="user-img" class="userInfo__img">
+                            <span class="userInfor__name">Zăn Tuấn</span>
+                            <ul class="userInfo__account-menu">
+                                <li class="account-menu__list">
+                                    <a href="" class="account-menu__list--link">Tài khoản của tôi</a>
+                                    
+                                </li>
+                                <li class="account-menu__list">
+                                   <a href="" class="account-menu__list--link">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="account-menu__list">
+                                 <a href="" class="account-menu__list--link">Đơn mua</a>
+                                </li>
+                                <li class="account-menu__list">
+                                    <a href="" class="account-menu__list--link">Đăng xuất</a>
+                                   </li>
+                                </ul>
+                        </div>
+                            
+                    </ul>
+                     
+                </nav>
+                <div class="header__general">
+                    <div class="header__general-logo">
+                        <img class="header__general-logo--img"
+                            src="https://img.icons8.com/clouds/80/000000/shopee.png" />
+                    </div>
+                    <div>
+                        <img class="general-logo--text" src="./assets/img/logo-img.png" alt="SHOPPE">
+                    </div>
+
+                    <div class="header__general-search">
+                        <div class="search-input">
+                            <input type="text" class="search-input--btn" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <div class="search__history">
+                                <h3 class="search__history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="search__history-list">
+                                    <li class="history-list__item"><a href="">Kem chống nắng </a></li>
+                                    <li class="history-list__item"><a href="">Áo thun nam</a></li>
+                                    <li class="history-list__item"><a href="">Kem trị mụn</a></li>
+                                    <li class="history-list__item"><a href="">Giày thể thao</a></li>
+                                    <li class="history-list__item"><a href="">Áo khoác</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-select">
+                            Trong shop
+                            <i class="fa-solid fa-chevron-down search-select__icon"></i>
+                            <div class="search-option">
+                                <ul class="search-option__list">
+                                    <li class="option__list-item">
+                                        Trong shop
+                                        <i class="fa-solid fa-check option__list-item--icon"></i>
+
+                                    </li>
+                                    <li class="option__list-item">Ngoài shop</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="search-button">
+                            <i class="fa-solid fa-magnifying-glass search-button__icon"></i>
+                        </div>
+
+                    </div>
+                    <div class="header__general-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="header__general-cart--quantity">0</div>
+                        <div class="cart__list">
+                            <img class="cart__list-no__cart" src="./assets/img/nocart-img.png" alt="no-cart">
+                            <span class="cart__list-description">Chưa có sản phẩm nào!</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end header -->
+
+        <!-- container -->
+        <div class="container">
+
+
+        </div>
+        <!-- footer -->
+        <div class="footer">
+
+        </div>
+    </div>
+    <!-- phần modal -->
+    <!-- <div class="modal">
+
+        <div class="modal__body">
+
+            <div class="modal__container"> -->
+    <!-- Form đăng ký -->
+    <!-- <div class="auth-form">
+
+                    <div class="auth-form__header">
+                        <h3 class="form__header-heading">
+                            Đăng ký
+                        </h3>
+                        <span class="form__header-switch-btn"><a href="#">Đăng nhập</a></span>
+
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="form__input">
+                            <input class="form__input--btn" placeholder="Email của bạn"></input>
+                        </div>
+                        <div class="form__input">
+                            <input class="form__input--btn" placeholder="Nhập mật khẩu"></input>
+                        </div>
+                        <div class="form__input">
+                            <input class="form__input--btn" placeholder="Nhập lại mật khẩu"></input>
+                        </div>
+                        <div class="form__input">
+                            <input class="form__input--btn" placeholder="Mã xác minh"></input>
+                            <button class="form__verify--btn">Giửi mã xác minh</button>
+                        </div>
+                    </div>
+                    <div class="auth__form-rule">
+                        <p class="form__rule-description">Bằng việc đăng ký, bạn đã đồng ý với Shoppe về <a
+                                href="#">Điều khoản dịch vụ</a>&<a href="">Chính sách bảo mật</a></p>
+                    </div>
+                    <div class="auth__form-close-and-login">
+                        <span class="form-close--btn">TRỞ LẠI</span>
+                        <button class="form-login--btn"><a href="">ĐĂNG KÝ</a></button>
+                    </div>
+                    <div class="auth-form-footer">
+                        <div class="form-footer__contact">
+                            <a href="" class="form-footer__contact--link">
+
+                                <img class="form-footer__contact-img"
+                                    src="https://img.icons8.com/color/48/000000/facebook-circled--v1.png" />
+                                <span class="form-footer__contact--info">Kết nối với Facebook</span>
+                            </a>
+                        </div>
+                        <div class="form-footer__contact">
+                            <a href="" class="form-footer__contact--link">
+                                <img class="form-footer__contact-img"
+                                    src="https://img.icons8.com/color/48/000000/google-logo.png" />
+                                <span class="form-footer__contact--info">Kết nối với Google</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div> -->
+    <!-- End form đăng ký -->
+
+    <!-- Form đăng nhập -->
+    <!-- <div class="auth-form">
+       
+                           <div class="auth-form__header">
+                               <h3 class="form__header-heading">
+                                   Đăng nhập 
+                               </h3>
+                               <span class="form__header-switch-btn"><a href="#">Đăng ký</a></span>
+       
+                           </div>
+                           <div class="auth-form__form">
+                               <div class="form__input">
+                                   <input class="form__input--btn" placeholder="Email của bạn"></input>
+                               </div>
+                               <div class="form__input">
+                                   <input class="form__input--btn" placeholder="Nhập mật khẩu"></input>
+                               </div>
+                             <div class="auth-form__help">
+                                 <a href="" class="form-help--link form-help--link__forgot-password ">Quên mật khẩu</a>
+                                
+                                 <a href="" class="form-help--link form-help--link__need-help">Cần trợ giúp?</a>
+                                  <div class="auth-form__help--sparate"></div> 
+                             </div>
+                           </div>
+                           <div class="auth__form-close-and-login">
+                               <span class="form-close--btn">TRỞ LẠI</span>
+                               <button class="form-login--btn"><a href="">ĐĂNG NHẬP</a></button>
+                           </div>
+                           <div class="auth-form-footer">
+                               <div class="form-footer__contact">
+                                   <a href="" class="form-footer__contact--link">
+                       
+                                   <img class="form-footer__contact-img" src="https://img.icons8.com/color/48/000000/facebook-circled--v1.png"/>
+                                   <span class="form-footer__contact--info">Kết nối với Facebook</span>
+                               </a>
+                               </div>
+                               <div class="form-footer__contact">
+                                   <a href="" class="form-footer__contact--link">
+                                   <img class="form-footer__contact-img" src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+                                   <span class="form-footer__contact--info">Kết nối với Google</span>
+                               </a>
+                               </div>
+                           
+                           </div>
+       
+                       </div> -->
+    <!-- End form đăng nhập -->
+    </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
