@@ -541,9 +541,11 @@
   flex-wrap: wrap;
   justify-content:  center;
   border-radius: 5px;
+  z-index: 1;
   animation: Growth linear 0.2s;
   /* chổ calc là bên phải */
   transform-origin:calc(100% - 7px) top;
+ 
 
 }
 /* tạo phần nhô lên phía trên cho cart-list */
@@ -820,24 +822,26 @@
 .product-item__price{
    display: flex;
    margin-top: 3px;
-   font-size: 1.4rem;
+   font-size: 1.2rem;
    justify-content: space-between;
 }
 .product-item__price--old{
     /*Tạo đường gạch ngang lên văn bản */
     text-decoration: line-through;
     color: #666;
-    font-size: 1.2rem;
+    
 }
 .product-item__price--new{
   color: var(--primary-color);
   font-weight: 600;
   margin-right: 15px;
+  font-size: 1.3rem;
 }
 .product-item__freeShip-icon{
     color: rgba(7,192,167,1);
     float: right;
     margin-top: 2px;
+    font-size: 1rem;
 }
 .product-item__action{
     display: flex;
