@@ -436,6 +436,7 @@
     border-left: 2px solid #e4e2e2;
     background-color:var(--white-color);
     cursor: pointer;
+    z-index: 2;
 
 }
 .search-select__icon{
