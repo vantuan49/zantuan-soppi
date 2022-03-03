@@ -52,13 +52,17 @@ body{
 .grid__column-2-5{
     padding-left: 5px;
     padding-right: 5px;
-    width:calc(( 2/ 12) * 100%);
+    width:calc(( 2/ 10) * 100%);
     flex: 1;
+    flex-wrap: wrap;
 }
 .grid__column-10{
     padding-left: 12px;
     padding-right: 12px;
     width:calc((10 / 12) * 100%);
+}
+.cursor-default{
+   cursor: default;
 }
 
 /* Pphần modal cho web */
@@ -240,4 +244,40 @@ body{
     width: 1px;
     height: 16px;
      background-color: #e0d8d8;
+}
+/* Phần Pagination(phân trang) */
+.pagination{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+  margin: 48px 0;
+}
+.pagination-item{
+  list-style: none;
+   min-width: 40px;
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  text-align: center; 
+  margin: 0 15px;
+  border-radius: 3px;
+  cursor: pointer;
+   
+}
+.pagination-item--active{
+    background-color: var(--primary-color);
+}
+.pagination__link{
+   text-decoration:none;
+   color: #939393;
+   font-weight: 500;
+   font-size: 2rem;
+  
+}
+.pagination__link--active{
+    color: var(--white-color);
+}
+
+.pagination-item__icon{
+
 }

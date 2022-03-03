@@ -605,7 +605,11 @@
 .category__list-item{
     
     padding: 10px 20px;
-    border-top: 2px solid #b4b0b0
+    border-top: 2px solid #b4b0b0;
+    overflow: hidden;
+    max-width: 170px;
+    text-overflow: ellipsis;
+
 }  
 .category__list-item--link{
      font-weight: 500;
@@ -791,17 +795,27 @@
 .home__product-item{
     position: relative;
     background-color: var(--white-color);
-    cursor: pointer;
-   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+    text-decoration: none; 
+    cursor: pointer;  
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   display: block;
+   margin-top: 10px;
+   transition: transform linear 0.1s ;
+   will-change: transform;
+   border-radius: 2px;
 
 }
 .home__product-item:hover{
-    transform:translateY(-8px) ;
+    transform:translateY(-3px) ;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
 }
 .home__product-item__img{
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    position: center;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
 }
 .home__product-item__name{
     margin:0;
@@ -878,18 +892,10 @@ i.product-item__like-icon--fill{
    margin-left: auto;
    margin-right: 5px;
 }
-.fa-star{
-
+.product-item__sold{
+    color: var(--text-color);
 }
-.product-item__star-icon{
 
-}
-.fa-solid.fa-heart.product-item__like-icon{
-
-}
-.fa-solid.fa-star.product-item__star-icon{
-
-}
 .product-item__source{
   display:flex;
   justify-content: space-between;
@@ -953,6 +959,7 @@ i.product-item__like-icon--fill{
   flex-direction: column;
   align-items: center;
   padding: 2px 3px ;
+  border-top-right-radius: 2px;
 }
 /* tạo phần trống phía dưới phần sale off */
 .product-item__sale-off::before{
@@ -978,4 +985,120 @@ i.product-item__like-icon--fill{
 .home__product-item__content{
     padding: 10px;
 }
+#footer{
+    border-top: 4px solid var(--primary-color);
+}
+.footer-top{
+  background-color: var(--white-color);
+}
+.footer-top__container{
+}
+.footer-top__container-heading{
+   margin: 2px 0 14px 0;
+   font-size: 1.4rem;
+}
+.footer-top__container-list{
+   list-style: none;
+   padding: 0;
+}
+.container-list__item{
+ padding: 4px 0;
+}
 
+.container-list__item--icon{
+    color: #737373;
+    font-size: 1.3rem;
+    margin: 0 5px;
+}
+.container-list__item--icon:hover{
+    color: var(--primary-color);
+}
+.container-list__item--link{
+  text-decoration: none;
+  color: #737373;
+  font-size: 1.3rem;
+  padding: 4px 0;
+}
+.container-list__item--link:hover{
+    color: var(--primary-color);
+}
+/* Phần Footer */
+.footer-top__container{
+    padding-left: 20px;
+}
+.footer-top__container-app{
+    display: flex;
+    align-items: center;
+    margin-top: -4px;
+}
+.container-app__QRcode{
+   max-width: 80px;
+   max-height: 80px;
+   border: 1px solid #dbdbdb;
+}
+.container-app__shop-app{
+margin-left: 10px;
+}
+.shop-app__ggplay{
+    height: 22px ;
+    margin-bottom: 10px;
+}
+.shop-app__appstore{
+   height: 22px;
+}
+/* end footer top */
+/* Footer bottom */
+.footer__policy-list{
+  display: flex;
+  justify-content: center;
+  margin: 28px;
+
+}
+.policy__list-item{
+    position: relative;
+   list-style: none;  
+   margin: 0 12px;
+
+}
+.policy__list-item::after{
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #b7b7b7;
+    position: absolute;
+    right: -13px;
+    top: -2px;
+}
+.policy__list-item--link{
+   text-decoration: none;
+   font-size: 1.4rem;
+   color:var(--black-color)
+}
+.policy__list-item--link:hover{
+    color: var(--primary-color);
+}
+/* footer Checked */
+.footer__checked{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.footer__checked-logo{
+  width: 180px;
+  
+}
+.footer__checked-company{
+      font-size: 1.3rem;
+      margin: 5px 0 0 20px;
+}
+/* footer information */
+.footer__information{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 40px;
+}
+.footer__information-text{
+    font-size: 1.2rem;
+    margin: 2px 0;
+}
