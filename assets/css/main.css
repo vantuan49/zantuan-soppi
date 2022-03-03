@@ -362,11 +362,12 @@
 }
 .search-input{
     width: 100%;
- margin-left: 20px;
+ margin-left: 10px;
 }
 .search-input--btn{
     flex: 1;
     height: 40px;
+    width: 210px;
     border: none;
     outline: none;
     font-size: 1.6rem;
