@@ -4,6 +4,7 @@
     --black-color:#000;
     --text-color:#333;
     --header-height:120px;
+    --navbar-height:34px;
     --primary-color:#f63f2e;
 }
 
@@ -22,14 +23,7 @@ body{
     margin:0;
     background-color: #f5f5f5;
 }
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
+
 .grid__row{
     display: flex;
     flex-wrap: wrap;
@@ -49,13 +43,7 @@ body{
 
 
 }
-.grid__column-2-5{
-    padding-left: 5px;
-    padding-right: 5px;
-    width:calc(( 2/ 10) * 100%);
-    flex: 1;
-    flex-wrap: wrap;
-}
+
 .grid__column-10{
     padding-left: 12px;
     padding-right: 12px;

@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/clouds/80/000000/shopee.png">
 
@@ -26,8 +28,8 @@
     <div id="app">
         <!-- header -->
         <div id="header">
-            <div class="grid ">
-                <nav class="header__navbar grid__full-width">
+            <div class="grid wide">
+                <nav class="header__navbar grid__full-width hide-on-mobile-tablet">
                     <ul class="navbar__list">
                         <li class="navbar__list-item pdl-8px">
                             Vào cửa hàng trên ứng dụng Sộp Pi
@@ -134,7 +136,12 @@
                     </ul>
 
                 </nav>
+
                 <div class="header__general">
+                    <label for="mobile__search-checkbox" class="header__search-mobile hide-on-pc hide-on-tablet">
+                        <i class="fa-solid fa-magnifying-glass header__search-mobile--icon"></i>
+                    </label>
+                    <input type="checkbox" hidden id="mobile__search-checkbox" class="header__search-checkbox">
                     <div class="header__general-logo">
                         <img class="header__general-logo--img"
                             src="https://img.icons8.com/clouds/80/000000/shopee.png" />
@@ -162,7 +169,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <div class="search-select">
                             Trong shop
                             <i class="fa-solid fa-chevron-down search-select__icon"></i>
@@ -195,16 +202,31 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sortbar hide-on-pc">
+                <li class="header__sortbar-item">
+                    <a href="" class="header__sortbar-item--link" style="color: var(--primary-color);">Liên quan</a>
+                </li>
+                <li class="header__sortbar-item">
+                    <a href="" class="header__sortbar-item--link">Mới nhất</a>
+                </li>
+                <li class="header__sortbar-item">
+                    <a href="" class="header__sortbar-item--link">Bán chạy</a>
+                </li>
+                <li class="header__sortbar-item">
+                    <a href="" class="header__sortbar-item--link">Giá</a>
+                </li>
+
+            </ul>
 
         </div>
         <!-- end header -->
 
         <!-- container -->
         <div id="container">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2">
-                        <nav class="category">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col l-2 ">
+                        <nav class="category hide-on-mobile-tablet">
                             <h3 class="category__heading">
                                 <i class="fa-solid fa-list category__heading-icon"></i>
                                 DANH MỤC
@@ -215,16 +237,20 @@
                                         style="color: var(--primary-color)">Jordan 1 Low</a>
                                 </li>
                                 <li class="category__list-item">
-                                    <a href="https://shopee.vn/search?keyword=air%20jordan%20hight" class="category__list-item--link">Air Jordan 1 High</a>
+                                    <a href="https://shopee.vn/search?keyword=air%20jordan%20hight"
+                                        class="category__list-item--link">Air Jordan 1 High</a>
                                 </li>
                                 <li class="category__list-item">
-                                    <a href="https://shopee.vn/search?keyword=jordan%204%20travis%20scott" class="category__list-item--link ">Air Jordan 4 Travis Scott</a>
+                                    <a href="https://shopee.vn/search?keyword=jordan%204%20travis%20scott"
+                                        class="category__list-item--link ">Air Jordan 4 Travis Scott</a>
                                 </li>
                                 <li class="category__list-item">
-                                    <a href="https://shopee.vn/search?keyword=yeezy%20350%20v2" class="category__list-item--link">Yeezy 350 V2</a>
+                                    <a href="https://shopee.vn/search?keyword=yeezy%20350%20v2"
+                                        class="category__list-item--link">Yeezy 350 V2</a>
                                 </li>
                                 <li class="category__list-item">
-                                    <a href="https://shopee.vn/search?keyword=%C3%A1o%20thun%20nam" class="category__list-item--link">Áo Thun Nam </a>
+                                    <a href="https://shopee.vn/search?keyword=%C3%A1o%20thun%20nam"
+                                        class="category__list-item--link">Áo Thun Nam </a>
                                 </li>
                                 <div class="category__list-item--more">
                                     <a href="https://vantuan49.github.io/ErrorPage/">Xem thêm</a>
@@ -232,9 +258,9 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10">
                         <!-- begin filter -->
-                        <div class="container__filter">
+                        <div class="container__filter hide-on-mobile-tablet">
                             <!-- Filter left -->
                             <div class="container__filter-left">
                                 <span class="container__filter-heading">Sắp xếp theo</span>
@@ -291,11 +317,12 @@
                         <!-- end filter -->
                         <!-- begni product -->
                         <div class="home__product">
-                            <div class="grid__row">
+                            <div class="row">
                                 <!-- sản phẩm 1 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <!-- Product item -->
-                                    <a href="https://shopee.vn/-FREESHIP-H%E1%BB%98P-QU%C3%80-Gi%C3%A0y-Th%E1%BB%83-Thao-Sneakers-Air-Jordan-1-Low-Nothing-But-Net-Th%E1%BB%95-C%E1%BA%A9m-C%E1%BB%95-Th%E1%BA%A5p-Cho-C%E1%BA%A3-Nam-V%C3%A0-N%E1%BB%AF-i.266138783.9680878892?sp_atk=06212577-15be-4ec8-aca2-500847f253fe" class="home__product-item">
+                                    <a href="https://shopee.vn/-FREESHIP-H%E1%BB%98P-QU%C3%80-Gi%C3%A0y-Th%E1%BB%83-Thao-Sneakers-Air-Jordan-1-Low-Nothing-But-Net-Th%E1%BB%95-C%E1%BA%A9m-C%E1%BB%95-Th%E1%BA%A5p-Cho-C%E1%BA%A3-Nam-V%C3%A0-N%E1%BB%AF-i.266138783.9680878892?sp_atk=06212577-15be-4ec8-aca2-500847f253fe"
+                                        class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/158551ee3c34928fdd65f3504a2d695a_tn);">
                                         </div>
@@ -340,8 +367,9 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 2 -->
-                                <div class="grid__column-2-5">
-                                    <a href="https://shopee.vn/Gi%C3%A0y-th%E1%BB%83-thao-Jordan-cao-c%E1%BB%95-%C4%91en-tr%E1%BA%AFng-Gi%C3%A0y-air-Jodan-1-high-panda-cao-c%E1%BB%95-nam-n%E1%BB%AF-d%E1%BB%85-ph%E1%BB%91i-%C4%91%E1%BB%93-c%E1%BB%B1c-hot-Full-Box-Bill-i.407809692.3092166407?sp_atk=4f51fd62-03ec-4448-b548-7e5bee7dcac5" class="home__product-item">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="https://shopee.vn/Gi%C3%A0y-th%E1%BB%83-thao-Jordan-cao-c%E1%BB%95-%C4%91en-tr%E1%BA%AFng-Gi%C3%A0y-air-Jodan-1-high-panda-cao-c%E1%BB%95-nam-n%E1%BB%AF-d%E1%BB%85-ph%E1%BB%91i-%C4%91%E1%BB%93-c%E1%BB%B1c-hot-Full-Box-Bill-i.407809692.3092166407?sp_atk=4f51fd62-03ec-4448-b548-7e5bee7dcac5"
+                                        class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/3642134554570a0d155011d023cb6b11);">
                                         </div>
@@ -386,7 +414,7 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 3 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="https://vantuan49.github.io/ErrorPage/" class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/94c4886227c3d4889362b6bb4df4207d);">
@@ -432,7 +460,7 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 4 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/158551ee3c34928fdd65f3504a2d695a_tn);">
@@ -478,7 +506,7 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 5 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/158551ee3c34928fdd65f3504a2d695a_tn);">
@@ -524,7 +552,7 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 6 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/158551ee3c34928fdd65f3504a2d695a_tn);">
@@ -570,7 +598,7 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 7 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/3642134554570a0d155011d023cb6b11);">
@@ -616,7 +644,7 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 8 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/94c4886227c3d4889362b6bb4df4207d);">
@@ -662,7 +690,7 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 9 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/158551ee3c34928fdd65f3504a2d695a_tn);">
@@ -708,7 +736,7 @@
                                     </a>
                                 </div>
                                 <!-- Sản phẩm 10 -->
-                                <div class="grid__column-2-5">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="#" class="home__product-item">
                                         <div class="home__product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/158551ee3c34928fdd65f3504a2d695a_tn);">
@@ -805,10 +833,10 @@
         <div id="footer">
             <!-- footer top -->
             <div class="footer-top">
-                <div class="grid">
-                    <div class="grid__row">
+                <div class="grid wide">
+                    <div class="row">
                         <!-- Phần chăm sóc khách hàng -->
-                        <div class="grid__column-2-5">
+                        <div class="col l-2-4 m-2-4 c-6">
                             <div class="footer-top__container">
                                 <h3 class="footer-top__container-heading">Chăm Sóc Khách Hàng</h3>
                                 <ul class="footer-top__container-list">
@@ -826,7 +854,7 @@
                         </div>
                         <!-- end -->
                         <!-- Phần Thông tin  -->
-                        <div class="grid__column-2-5">
+                        <div class="col l-2-4 m-2-4 c-6">
                             <div class="footer-top__container">
                                 <h3 class="footer-top__container-heading">Về Sộp Pi</h3>
                                 <ul class="footer-top__container-list">
@@ -844,7 +872,7 @@
                         </div>
                         <!-- end -->
                         <!-- Phần danh mục -->
-                        <div class="grid__column-2-5">
+                        <div class="col l-2-4 m-2-4 c-6">
                             <div class="footer-top__container">
                                 <h3 class="footer-top__container-heading">Danh Mục</h3>
                                 <ul class="footer-top__container-list">
@@ -862,7 +890,7 @@
                         </div>
                         <!-- end -->
                         <!-- Phần Contact mạng xã hội -->
-                        <div class="grid__column-2-5">
+                        <div class="col l-2-4 m-2-4 c-6">
                             <div class="footer-top__container">
                                 <h3 class="footer-top__container-heading">Theo Dõi Chúng Tôi</h3>
                                 <ul class="footer-top__container-list">
@@ -888,7 +916,7 @@
                             </div>
                         </div>
                         <!-- end -->
-                        <div class="grid__column-2-5">
+                        <div class="col l-2-4 m-2-4 c-6">
                             <div class="footer-top__container">
                                 <h3 class="footer-top__container-heading">Vào Ứng Dụng</h3>
                                 <div class="footer-top__container-app">
@@ -904,45 +932,49 @@
                             </div>
                         </div>
 
-
                     </div>
                 </div>
             </div>
-            <!-- end footer top -->
-            <div class="footer-bottom">
-                <div class="grid">
-                    <!-- Policy là chính sách -->
-                    <!-- Phần chính sách -->
-                    <ul class="footer__policy-list">
-                        <li class="policy__list-item">
-                            <a href="" class="policy__list-item--link">CHÍNH SÁCH BẢO MẬT</a>
-                        </li>
-                        <li class="policy__list-item">
-                            <a href="" class="policy__list-item--link"> CƠ CHẾ HOẠT ĐỘNG</a>
-                        </li>
-                        <li class="policy__list-item">
-                            <a href="" class="policy__list-item--link"> CHÍNH SÁCH VẬN CHUYỂN</a>
-                        </li>
-                        <li class="policy__list-item">
-                            <a href="" class="policy__list-item--link">CHÍNH SÁCH ĐỔI TRẢ VÀ HOÀN TIỀN</a>
-                        </li>
 
-                    </ul>
-                    <!-- end policy -->
-                    <!-- footer checked -->
-                    <div class="footer__checked">
-                        <img src="./assets/img/checked-img.png" alt="Checked" class="footer__checked-logo">
-                         <span class="footer__checked-company">Công Ty TNHH Sộp Pi</span>
-                    </div>
-                    <!-- end footer checked -->
-                    <div class="footer__information">
-                        <p class="footer__information-text">999, Dương Công Khi, Huyện Hóc Môn, TP.HCM</p>
-                        <p class="footer__information-text">Mã số doanh nghiệp: 0108838679 do Sở Kế Hoạch & Đầu Tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
-                        <p class="footer__information-text">© 2015 - Bản quyền thuộc về Công ty TNHH Sộp Pi</p>
-                    </div>
-                    <!-- end footer information -->
+
+                <!-- end footer top -->
+                <div class="footer-bottom">
+                    <div class="grid wide">
+                        <!-- Policy là chính sách -->
+                        <!-- Phần chính sách -->
+                        <ul class="footer__policy-list">
+                            <li class="policy__list-item">
+                                <a href="" class="policy__list-item--link">CHÍNH SÁCH BẢO MẬT</a>
+                            </li>
+                            <li class="policy__list-item">
+                                <a href="" class="policy__list-item--link"> CƠ CHẾ HOẠT ĐỘNG</a>
+                            </li>
+                            <li class="policy__list-item">
+                                <a href="" class="policy__list-item--link"> CHÍNH SÁCH VẬN CHUYỂN</a>
+                            </li>
+                            <li class="policy__list-item">
+                                <a href="" class="policy__list-item--link">CHÍNH SÁCH ĐỔI TRẢ VÀ HOÀN TIỀN</a>
+                            </li>
+
+                        </ul>
+                        <!-- end policy -->
+                        <!-- footer checked -->
+                        <div class="footer__checked">
+                            <img src="./assets/img/checked-img.png" alt="Checked" class="footer__checked-logo">
+                            <span class="footer__checked-company">Công Ty TNHH Sộp Pi</span>
+                        </div>
+                        <!-- end footer checked -->
+                        <div class="footer__information">
+                            <p class="footer__information-text">999, Dương Công Khi, Huyện Hóc Môn, TP.HCM</p>
+                            <p class="footer__information-text">Mã số doanh nghiệp: 0108838679 do Sở Kế Hoạch & Đầu Tư
+                                TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                            <p class="footer__information-text">© 2015 - Bản quyền thuộc về Công ty TNHH Sộp Pi</p>
+                        </div>
+                        <!-- end footer information -->
+                    
                 </div>
             </div>
+            
         </div>
     </div>
 
