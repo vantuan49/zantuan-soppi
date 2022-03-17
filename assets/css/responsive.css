@@ -1,0 +1,146 @@
+/* mobile and tablet */
+@media (max-width:1023px) {
+    :root {
+        --header-height:80px;
+        --navbar-height: 34px;
+    }
+
+    .hide-on-mobile-tablet {
+        display:none;
+    }
+    #header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    .header__general {
+      
+    }
+    .general-logo--text {
+        display: none;
+    }
+    #container {
+        margin-top: calc(var(--header-height) + 20px );
+    }
+    .header__sortbar {
+        padding-left: 0px;
+    }
+    .home__product {
+        margin-top: 20px;
+    }
+    .pagination{
+        padding-left: 0;
+    }
+    
+}
+/* Pc */
+@media (min-width:1024px) {
+    .hide-on-pc {
+        display:none;
+    }
+}
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-tablet {
+        display:none;
+    }
+    .header__general {
+      
+    }
+    .header__general-logo {
+       margin-left: 0;
+       margin-right: 20px;
+    }
+    .header__general-cart{
+        margin-left: 30px;
+       margin-right: 0;
+    }
+    .search__history{
+        width: 50%;
+    }
+    .shop-app__ggplay{
+        height: 15px;
+    }
+    .shop-app__appstore{
+        height: 15px;
+    }
+    .policy__list-item::after {
+       height: 40px;
+    }
+    
+}
+/* Mobile */
+@media (max-width:739px) {
+    .hide-on-mobile {
+        display:none;
+    }
+    .header__general-logo {
+        margin-left:70px
+    }
+    .header__general-search {
+        position: fixed;
+        top:var(--header-height);
+        width: 100%;
+        z-index: 10;
+        display:none;
+      
+        animation: mobileSearchSideIn ease-in 0.4s;
+    }
+    .header__search-checkbox:checked  ~ .header__general-search {
+        display:flex;
+    }
+    @keyframes mobileSearchSideIn {
+        from{
+            transform: translateX(-100%);
+            
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+    .search__history{
+        width: 100%;
+        top: 100%;
+    }
+    
+    .pagination-item{
+        min-width: 20px;
+        margin: 0 5px;
+       padding: 5px 10px;
+       line-height: 20px;
+    }
+    .pagination__link{
+        font-size: 1.6rem;
+    }
+    .footer-top__container {
+        padding-left: 40px;
+    }
+    .footer-top__container-heading {
+        margin-top: 10px;
+    }
+    .container-app__shop-app {
+        display:flex;
+
+    }
+    .container-app--link{
+         margin: 0 10px;
+    }
+    .container-app__QRcode{
+        margin-left: -15px;
+    }
+    .footer__policy-list {
+        padding-left: 0;
+    }
+    .policy__list-item::after{
+        height: 70px;
+    }
+    .footer__information {
+        text-align:center;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+    
+    
+
+}
