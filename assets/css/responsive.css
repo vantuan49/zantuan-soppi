@@ -123,6 +123,7 @@
     }
     .footer-top__container-heading {
         margin-top: 10px;
+        font-size: 1.2rem;
     }
     .container-app__shop-app {
         display:flex;
@@ -155,6 +156,16 @@
     }
     .footer__checked-company {
         margin: 10px 0;
+        font-size: 1.2rem;
+    }
+    .container-list__item--link {
+        font-size:1.1rem;
+    }
+    .policy__list-item--link {
+        font-size: 1.2rem;
+    }
+    .footer__information-text {
+        font-size: 1.2rem;
     }
 }
     
