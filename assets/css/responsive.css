@@ -88,7 +88,7 @@
         display:none;
     }
     .header__general-logo {
-        margin-left:50px
+        margin-left:38px
     }
     .header__general-search {
         position: fixed;
@@ -148,10 +148,13 @@
     }
     .footer-top__container-app {
         flex-direction: column;
-        margin-left: 220px;
+        margin-left: 180px;
     }
     .container-app__shop-app {
         margin-top: 10px;
+    }
+    .footer__checked-company {
+        margin: 10px 0;
     }
 }
     
