@@ -1,5 +1,5 @@
 /* mobile and tablet */
-@media (max-width:1023px) {
+@media (max-width:63.938rem) {
     :root {
         --header-height:80px;
         --navbar-height: 34px;
@@ -35,13 +35,13 @@
     
 }
 /* Pc */
-@media (min-width:1024px) {
+@media (min-width: 64rem) {
     .hide-on-pc {
         display:none;
     }
 }
 /* Tablet */
-@media (min-width:740px) and (max-width:1023px) {
+@media (min-width: 46.25rem) and (max-width: 63.938rem) {
     .hide-on-tablet {
         display:none;
     }
@@ -83,7 +83,7 @@
     
 }
 /* Mobile */
-@media (max-width:739px) {
+@media (max-width:46.188rem) {
     .hide-on-mobile {
         display:none;
     }
@@ -149,7 +149,7 @@
     }
     .footer-top__container-app {
         flex-direction: column;
-        margin-left: 180px;
+        margin-left: 110%;
     }
     .container-app__shop-app {
         margin-top: 10px;
@@ -166,6 +166,19 @@
     }
     .footer__information-text {
         font-size: 1.2rem;
+    }
+    .cart__list {
+        z-index: 10;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right:0;
+        width: 100%;
+      transform-origin: calc(100% - 50px) top;
+    }
+    .cart__list::before {
+        top: -30px;
+        right: 50px;
     }
 }
     
