@@ -352,10 +352,20 @@
    margin-left: 50px;
 
 }
+.header__general-logo--img{
+    animation: filterColor infinite 0.5s;
+}
+@keyframes filterColor {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
 .general-logo--text{
    width: 110px;
   margin: 0px 15px -15px 0;
-
 }
 /* phần ô search */
 .header__general-search{
@@ -546,6 +556,7 @@
     padding: 0px 10px;
     border: 3px solid #fa5631;
     border-radius: 50px;
+    animation: filterColor infinite 0.5s;
 }
 .cart__list{
   position:absolute;
@@ -896,7 +907,7 @@ i.product-item__like-icon--emty{
     display: none;
 }
 i.product-item__like-icon--fill{
-  
+    animation: filterColor infinite 0.5s;
 }
 
 .fa-solid{
